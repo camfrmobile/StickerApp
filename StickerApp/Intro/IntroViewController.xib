@@ -13,7 +13,8 @@
                 <outlet property="nextButton" destination="1QZ-Cx-M1f" id="a3n-Zz-M59"/>
                 <outlet property="titleLabel" destination="smq-Jk-FAq" id="yeK-oc-pWw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="widthButtonConstraint" destination="7QH-UH-usB" id="gub-Mj-uEK"/>
+                <outlet property="view4" destination="aea-Pg-seW" id="ogG-RP-sLv"/>
+                <outlet property="widthButtonConstraint" destination="T8Q-wx-xKD" id="sde-mh-xwv"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -55,29 +56,40 @@ adipiscing elit, sed do eiusmod.</string>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QZ-Cx-M1f">
-                                    <rect key="frame" x="32" y="197.5" width="104" height="52"/>
-                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aea-Pg-seW" userLabel="View4">
+                                    <rect key="frame" x="32" y="197.5" width="350" height="52"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QZ-Cx-M1f">
+                                            <rect key="frame" x="0.0" y="0.0" width="104" height="52"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="104" id="T8Q-wx-xKD"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="ic_next"/>
+                                            <connections>
+                                                <action selector="actionNextButton:" destination="-1" eventType="touchUpInside" id="8B5-zg-4tb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="104" id="7QH-UH-usB"/>
-                                        <constraint firstAttribute="height" constant="52" id="Edm-Uj-p3S"/>
+                                        <constraint firstAttribute="bottom" secondItem="1QZ-Cx-M1f" secondAttribute="bottom" id="PoK-e3-4hF"/>
+                                        <constraint firstAttribute="height" constant="52" id="QJS-wX-N0h"/>
+                                        <constraint firstItem="1QZ-Cx-M1f" firstAttribute="top" secondItem="aea-Pg-seW" secondAttribute="top" id="d8B-Zz-7Iz"/>
+                                        <constraint firstItem="1QZ-Cx-M1f" firstAttribute="leading" secondItem="aea-Pg-seW" secondAttribute="leading" id="dGo-pI-n75"/>
                                     </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="ic_next"/>
-                                    <connections>
-                                        <action selector="actionNextButton:" destination="-1" eventType="touchUpInside" id="8B5-zg-4tb"/>
-                                    </connections>
-                                </button>
+                                </view>
                             </subviews>
                             <constraints>
+                                <constraint firstAttribute="bottom" secondItem="aea-Pg-seW" secondAttribute="bottom" constant="76" id="4Xm-Oy-Ubv"/>
                                 <constraint firstItem="uA8-5U-h9Q" firstAttribute="leading" secondItem="Syc-hA-Gqv" secondAttribute="leading" constant="32" id="4uo-Zx-cJo"/>
                                 <constraint firstAttribute="trailing" secondItem="uA8-5U-h9Q" secondAttribute="trailing" constant="32" id="7mI-V7-etu"/>
                                 <constraint firstItem="uA8-5U-h9Q" firstAttribute="top" secondItem="smq-Jk-FAq" secondAttribute="bottom" constant="16" id="KbM-K0-Qhk"/>
+                                <constraint firstAttribute="trailing" secondItem="aea-Pg-seW" secondAttribute="trailing" constant="32" id="Ljv-8D-l6C"/>
+                                <constraint firstItem="aea-Pg-seW" firstAttribute="leading" secondItem="Syc-hA-Gqv" secondAttribute="leading" constant="32" id="b1L-hK-Pdd"/>
                                 <constraint firstItem="smq-Jk-FAq" firstAttribute="top" secondItem="Syc-hA-Gqv" secondAttribute="top" constant="24" id="i0c-1G-EuN"/>
                                 <constraint firstAttribute="trailing" secondItem="smq-Jk-FAq" secondAttribute="trailing" constant="32" id="n2g-lJ-gIr"/>
-                                <constraint firstAttribute="bottom" secondItem="1QZ-Cx-M1f" secondAttribute="bottom" constant="76" id="ndi-NV-Xie"/>
                                 <constraint firstItem="smq-Jk-FAq" firstAttribute="leading" secondItem="Syc-hA-Gqv" secondAttribute="leading" constant="32" id="nks-b2-5iC"/>
-                                <constraint firstItem="1QZ-Cx-M1f" firstAttribute="leading" secondItem="Syc-hA-Gqv" secondAttribute="leading" constant="32" id="sMp-kx-ltq"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -101,7 +113,7 @@ adipiscing elit, sed do eiusmod.</string>
                 <constraint firstItem="nUI-ae-RJx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sxd-ks-QzN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nUI-ae-RJx" secondAttribute="trailing" id="wab-wn-hKw"/>
             </constraints>
-            <point key="canvasLocation" x="133" y="21"/>
+            <point key="canvasLocation" x="131.8840579710145" y="20.758928571428569"/>
         </view>
     </objects>
     <resources>
