@@ -58,12 +58,12 @@
 		34689864291664DF009E759F /* StickerApp */ = {
 			isa = PBXGroup;
 			children = (
-				34703A1F2919133D0079250A /* Home */,
-				34689879291669F5009E759F /* Intro */,
 				34689865291664DF009E759F /* AppDelegate.swift */,
 				3468986E291664E1009E759F /* Assets.xcassets */,
 				34689870291664E1009E759F /* LaunchScreen.storyboard */,
 				34689873291664E1009E759F /* Info.plist */,
+				34689879291669F5009E759F /* Intro */,
+				34703A1F2919133D0079250A /* Home */,
 			);
 			path = StickerApp;
 			sourceTree = "<group>";

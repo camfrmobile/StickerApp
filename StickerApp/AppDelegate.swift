@@ -14,9 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let introVC = IntroViewController()
+        //let introVC = IntroViewController()
+        let homeVC = HomeViewController()
         
-        window?.rootViewController = introVC
+        window?.rootViewController = homeVC
         window?.makeKeyAndVisible()
         return true
     }

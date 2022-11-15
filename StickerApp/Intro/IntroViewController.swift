@@ -39,6 +39,7 @@ class IntroViewController: UIViewController {
             setupIntro3()
         default:
             let homeVC = HomeViewController()
+            homeVC.modalPresentationStyle = .overFullScreen
             present(homeVC, animated: true)
         }
     }
