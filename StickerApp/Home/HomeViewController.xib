@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,6 +16,7 @@
                 <outlet property="addNewButton" destination="U8x-Ro-Dz6" id="Qk9-99-1Ds"/>
                 <outlet property="cricleView" destination="l8S-vg-eZR" id="OT1-Tr-Asg"/>
                 <outlet property="firstCenterView" destination="BJp-xD-h8p" id="V3Q-yd-pgH"/>
+                <outlet property="menuCollectionView" destination="czZ-F4-Eoj" id="V3n-BA-Ci9"/>
                 <outlet property="nextMenuButton" destination="FAb-1Q-GBS" id="sGp-O5-9op"/>
                 <outlet property="secondCenterView" destination="PGV-F5-kRb" id="VkF-hW-2fm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -67,33 +69,22 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zb-di-Pcd" userLabel="topBottomView">
                                     <rect key="frame" x="0.0" y="60" width="294.66666666666669" height="60"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="96W-eY-4nI">
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="czZ-F4-Eoj">
                                             <rect key="frame" x="0.0" y="12" width="294.66666666666669" height="36"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5g-ZH-85Z">
-                                                    <rect key="frame" x="0.0" y="1" width="94.666666666666671" height="34.333333333333336"/>
-                                                    <color key="backgroundColor" red="0.38431376220000002" green="0.12549020350000001" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="gray" title="Cartoon"/>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUW-pm-7k4">
-                                                    <rect key="frame" x="104.66666666666669" y="1" width="72.333333333333314" height="34.333333333333336"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="gray" title="Emoji"/>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWa-85-D5s">
-                                                    <rect key="frame" x="187" y="1" width="107.66666666666669" height="34.333333333333336"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="gray" title="Emotions"/>
-                                                </button>
-                                            </subviews>
-                                        </stackView>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JAd-1F-93R">
+                                                <size key="itemSize" width="128" height="128"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                        </collectionView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="96W-eY-4nI" secondAttribute="trailing" id="DVk-6c-TxC"/>
-                                        <constraint firstItem="96W-eY-4nI" firstAttribute="leading" secondItem="4Zb-di-Pcd" secondAttribute="leading" id="IFo-J7-KRs"/>
-                                        <constraint firstAttribute="bottom" secondItem="96W-eY-4nI" secondAttribute="bottom" constant="12" id="URr-hB-XmB"/>
-                                        <constraint firstItem="96W-eY-4nI" firstAttribute="top" secondItem="4Zb-di-Pcd" secondAttribute="top" constant="12" id="x4t-tJ-cS8"/>
+                                        <constraint firstItem="czZ-F4-Eoj" firstAttribute="leading" secondItem="4Zb-di-Pcd" secondAttribute="leading" id="5qw-nU-5SN"/>
+                                        <constraint firstAttribute="trailing" secondItem="czZ-F4-Eoj" secondAttribute="trailing" id="63X-Tu-ePl"/>
+                                        <constraint firstAttribute="bottom" secondItem="czZ-F4-Eoj" secondAttribute="bottom" constant="12" id="Ox4-EM-d09"/>
+                                        <constraint firstItem="czZ-F4-Eoj" firstAttribute="top" secondItem="4Zb-di-Pcd" secondAttribute="top" constant="12" id="wXu-r9-T4n"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvz-wm-NK9" userLabel="topBottomRightView">
@@ -108,6 +99,9 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="ic_next"/>
+                                            <connections>
+                                                <action selector="actionNextMenu:" destination="-1" eventType="touchUpInside" id="dlA-VT-9kO"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -314,7 +308,7 @@
                 <constraint firstItem="zwY-a9-vgL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="P9D-ZZ-WSR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zwY-a9-vgL" secondAttribute="trailing" id="eQ7-8d-FdK"/>
             </constraints>
-            <point key="canvasLocation" x="59.420289855072468" y="20.089285714285712"/>
+            <point key="canvasLocation" x="58.778625954198468" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>

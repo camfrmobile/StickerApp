@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34420E97292B20920044749E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34420E96292B20920044749E /* Menu.swift */; };
+		34420E99292B2FEC0044749E /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34420E98292B2FEC0044749E /* MenuCollectionViewCell.swift */; };
 		34689866291664DF009E759F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34689865291664DF009E759F /* AppDelegate.swift */; };
 		3468986F291664E1009E759F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3468986E291664E1009E759F /* Assets.xcassets */; };
 		34689872291664E1009E759F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34689870291664E1009E759F /* LaunchScreen.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34420E96292B20920044749E /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		34420E98292B2FEC0044749E /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		34689862291664DF009E759F /* StickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34689865291664DF009E759F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3468986E291664E1009E759F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34420E90292B1CE40044749E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				34420E98292B2FEC0044749E /* MenuCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		34420E95292B206B0044749E /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				34420E96292B20920044749E /* Menu.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
 		34689859291664DF009E759F = {
 			isa = PBXGroup;
 			children = (
@@ -59,11 +79,13 @@
 			isa = PBXGroup;
 			children = (
 				34689865291664DF009E759F /* AppDelegate.swift */,
+				34420E95292B206B0044749E /* Modals */,
+				34420E90292B1CE40044749E /* Cells */,
+				34703A1F2919133D0079250A /* Home */,
+				34689879291669F5009E759F /* Intro */,
 				3468986E291664E1009E759F /* Assets.xcassets */,
 				34689870291664E1009E759F /* LaunchScreen.storyboard */,
 				34689873291664E1009E759F /* Info.plist */,
-				34689879291669F5009E759F /* Intro */,
-				34703A1F2919133D0079250A /* Home */,
 			);
 			path = StickerApp;
 			sourceTree = "<group>";
@@ -161,6 +183,8 @@
 				34689866291664DF009E759F /* AppDelegate.swift in Sources */,
 				34703A1D291908200079250A /* IntroViewController.swift in Sources */,
 				34703A222919134D0079250A /* HomeViewController.swift in Sources */,
+				34420E97292B20920044749E /* Menu.swift in Sources */,
+				34420E99292B2FEC0044749E /* MenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88TQA3256J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StickerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,6 +331,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +352,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88TQA3256J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StickerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,6 +360,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
